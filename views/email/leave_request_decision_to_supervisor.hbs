@@ -1,9 +1,9 @@
-Leave request decision is made
+Entscheidung über den Urlaubsantrag wurde getroffen
 =====
-<p>Hello <strong>{{#with approver }}{{this.full_name}}{{/with}}</strong>,<p>
+<p>Hallo <strong>{{#with approver }}{{this.full_name}}{{/with}}</strong>,<p>
 
 {{> email/leave_comments comments=comments }}
 
-<p>You just processed {{#if was_pended_revoke}}cancellation of {{/if}}leave request {{>leave_request_detail leave=leave }} for {{#with requester}}{{this.full_name}}{{/with}}: to {{action}}.</p>
+<p>Du hast gerade {{#if was_pended_revoke}}die Stornierung des {{/if}}Urlaubsantrags {{>leave_request_detail leave=leave }} für {{#with requester}}{{this.full_name}}{{/with}} bearbeitet: zu {{action}}.</p>
 
-<p>Thanks</p>
+<p>Danke</p>

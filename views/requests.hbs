@@ -1,18 +1,18 @@
 
 {{> header }}
 
-<h1>{{logged_user.name}} {{logged_user.lastname}} messages</h1>
+<h1>{{logged_user.name}} {{logged_user.lastname}} Nachrichten</h1>
 
 {{> show_flash_messages }}
 
 <div class="row main-row_header">
-  <p class="col-md-12">Leave request to approve</p>
+  <p class="col-md-12">Urlaubsantrag zur Genehmigung</p>
 </div>
 
 <div class="row">
   {{# unless to_be_approved_leaves}}
   <div class="col-md-12 text-muted">
-    There are no leave requests to decide on.
+    Es gibt keine Urlaubsanträge zu entscheiden.
   </div>
   {{else}}
   <div class="col-md-12">
@@ -21,13 +21,13 @@
     <table class="table table-hover requests-to-approve-table">
       <thead>
         <tr>
-          <th>Employee</th>
-          <th>Department</th>
-          <th>Date of request</th>
-          <th>Leave dates</th>
-          <th>Type</th>
-          <th>Days</th>
-          <th class="col-xs-2">Comment</th>
+          <th>Arbeitnehmer</th>
+          <th>Abteilung</th>
+          <th>Datum der Anfrage</th>
+          <th>Urlaubsdaten</th>
+          <th>Typ</th>
+          <th>Tage</th>
+          <th class="col-xs-2">Kommentar</th>
           <th colspan="2"></th>
         </tr>
       </thead>
@@ -68,7 +68,7 @@
 <div class="main-row_header">&nbsp;</div>
 
 <div class="row main-row_header">
-  <p class="col-md-12">All my absences</p>
+  <p class="col-md-12">Alle meine Abwesenheiten</p>
 </div>
 
 {{> user_requests_grouped grouped_leaves=my_leaves_grouped logged_user=logged_user }}

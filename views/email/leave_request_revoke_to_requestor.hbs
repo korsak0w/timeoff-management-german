@@ -1,11 +1,11 @@
-Leave request is waiting decision
+Urlaubsantrag wartet auf Entscheidung
 =====
-<p>Hello <strong>{{#with requester}}{{this.full_name}}{{/with}}</strong>,</p>
+<p>Hallo <strong>{{#with requester}}{{this.full_name}}{{/with}}</strong>,</p>
 
-<p>Your leave request <strong>{{>leave_request_detail leave=leave }} cancellation</strong> was sent to <strong>{{#with approver }}{{this.full_name}}{{/with}}</strong>.</p>
+<p>Ihr Urlaubsantrag <strong>{{>leave_request_detail leave=leave }} Stornierung</strong> wurde an <strong>{{#with approver }}{{this.full_name}}{{/with}}</strong> gesendet.</p>
 
 {{> email/leave_comments comments=comments }}
 
-<p>There will be another email upon decision.</p>
+<p>Nach der Entscheidung erhalten Sie eine weitere E-Mail.</p>
 
-<p>Thanks</p>
+<p>Danke</p>

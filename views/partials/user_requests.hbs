@@ -2,7 +2,7 @@
 <div class="row">
   {{# unless leaves}}
   <div class="col-md-12 text-muted">
-    There are no leave requests yet.
+    Es liegen noch keine Urlaubsanträge vor.
   </div>
   {{else}}
 
@@ -12,12 +12,12 @@
     <table class="table table-hover user-requests-table">
       <thead>
         <tr>
-          <th>Dates (from <i class="fa fa-long-arrow-right"></i> to)</th>
-          <th>Type</th>
-          <th>Deducted</th>
-          <th>Approved by</th>
+          <th>Daten (from <i class="fa fa-long-arrow-right"></i> to)</th>
+          <th>Typ</th>
+          <th>Abgezogen</th>
+          <th>Genehmigt von</th>
           <th></th>
-          <th class="col-xs-2">Comment</th>
+          <th class="col-xs-2">Kommentar</th>
           <th><span class="pull-right">Status</span></th>
         </tr>
       </thead>
@@ -50,7 +50,7 @@
           {{/if}}
         </td>
         <td>{{this.comment.comment}}</td>
-        <td><span class="pull-right leave-request-row-status">{{#if this.is_new_leave }}Pending{{else}}{{#if this.is_approved_leave}}Approved{{else}}Rejected{{/if}}{{/if}}</span></td>
+        <td><span class="pull-right leave-request-row-status">{{#if this.is_new_leave }}Ausstehend{{else}}{{#if this.is_approved_leave}}Genehmigt{{else}}Abgelehnt{{/if}}{{/if}}</span></td>
       </tr>
 
       {{/ each }}

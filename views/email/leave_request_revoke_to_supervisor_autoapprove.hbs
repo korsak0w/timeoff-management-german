@@ -1,11 +1,11 @@
-Leave was revoked and auto approved
+Urlaub wurde widerrufen und automatisch genehmigt
 =====
-<p>Hello {{#with approver }}{{this.full_name}}{{/with}},</p>
+<p>Hallo {{#with approver }}{{this.full_name}}{{/with}},</p>
 
-<p><strong>{{#with requester}}{{this.full_name}}{{/with}} cancelled</strong> leave request <strong>{{>leave_request_detail leave=leave }}</strong>.</p>
+<p><strong>{{#with requester}}{{this.full_name}}{{/with}} hat</strong> den Urlaubsantrag <strong>{{>leave_request_detail leave=leave }}</strong> storniert.</p>
 
 {{> email/leave_comments comments=comments }}
 
-<p>There is no need to perform any actions regarding this leave.</p>
+<p>Für diesen Urlaub müssen keine Maßnahmen ergriffen werden.</p>
 
-<p>Thanks</p>
+<p>Danke</p>

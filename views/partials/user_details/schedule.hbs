@@ -7,14 +7,14 @@
   {{> user_details/breadcrumb employee=employee }}
 
   <div class="form-group">
-    <label for="" class="control-label">Schedule</label>
+    <label for="" class="control-label">Zeitplan</label>
 
     <p class="help-block">
       {{# with schedule }}
       {{# if (is_user_specific) }}
-        Current employee has <strong data-vpp="declare-user-specific-schedule">custom</strong> schedule.
+        Der aktuelle Mitarbeiter hat einen <strong data-vpp="declare-user-specific-schedule">individuellen</strong> Zeitplan.
       {{else}}
-        Current employee uses <strong><a data-vpp="link-to-company-schedule" href="/settings/general/">company wide</a></strong> schedule.
+        Der aktuelle Mitarbeiter nutzt den <strong><a data-vpp="link-to-company-schedule" href="/settings/general/">unternehmensweiten</a></strong> Zeitplan.
       {{/if}}
       {{/with}}
     </p>
@@ -28,10 +28,10 @@
     <div class="pull-right">
     {{# with schedule }}
     {{# if (is_user_specific) }}
-      <button type="submit" name="revoke_user_specific_schedule" class="btn btn-default">Move employee to company wide schedule</button>
-      <button type="submit" name="save_user_specific_schedule" class="btn btn-success">Save employee specific schedule</button>
+      <button type="submit" name="revoke_user_specific_schedule" class="btn btn-default">Mitarbeiter in den unternehmensweiten Zeitplan verschieben</button>
+      <button type="submit" name="save_user_specific_schedule" class="btn btn-success">Mitarbeiterspezifischen Zeitplan speichern</button>
     {{else}}
-      <button type="submit" name="save_user_specific_schedule" class="btn btn-success">Override company wide schedule</button>
+      <button type="submit" name="save_user_specific_schedule" class="btn btn-success">Unternehmensweiten Zeitplan außer Kraft setzen</button>
     {{/if}}
     {{/with}}
     </div>
